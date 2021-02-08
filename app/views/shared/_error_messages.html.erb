@@ -1,0 +1,10 @@
+<% if @kanja.errors.any? %>
+  <div id="error_explanation">
+    The form contains <%= pluralize(@kanja.errors.count, "error") %>
+    <ul>
+      <% @kanja.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
