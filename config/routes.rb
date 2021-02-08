@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'kanjas/new'
   devise_for :users
   get 'landing_pages/home'
   get 'landing_pages/help'

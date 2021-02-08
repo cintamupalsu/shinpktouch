@@ -1,0 +1,2 @@
+module KanjasHelper
+end
