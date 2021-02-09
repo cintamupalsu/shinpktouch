@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'landing_pages/home'
   get 'landing_pages/help'
+  post 'search_kanja', to: 'kanjas#search'
   root 'landing_pages#home'
   
   resources :kanjas

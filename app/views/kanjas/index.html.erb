@@ -1,0 +1,8 @@
+<% provide(title: "患者検索")%>
+<%= form_for(:kanjasearch, url: search_kanja_path) do |f| %>
+  <h3>
+    <%= f.label :barcode %>
+    <%= f.text_field :barcode , class: 'form-control', id: 'barcode_input' %>
+    <%= f.submit "🔎", class: 'btn btn-primary' %>
+  </h3>
+<% end %>
